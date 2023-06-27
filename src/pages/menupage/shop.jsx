@@ -7,7 +7,10 @@ import { Card } from '../../components/Card/Card';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
-export const Shop = () => {
+export const Shop = ({api}) => {
+
+
+
   const [product, setProduct] = useState([]);
 
   useEffect(() => {
@@ -16,7 +19,7 @@ export const Shop = () => {
 
 
   const getProduct = () => {
-    axios.get('')
+    axios.get(api)
       .then((response) => {
         setProduct(response.data);
       })
@@ -44,3 +47,14 @@ export const Shop = () => {
   );
 };
     // <Footer />
+
+
+
+    // {
+    //   name: "sf"
+    //   e: "sf"
+    //   e: "sf"
+    //   isAdmin: False
+    // }
+
+    // if data.isAdmin == True? 

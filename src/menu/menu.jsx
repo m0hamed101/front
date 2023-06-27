@@ -7,7 +7,7 @@ import axios from 'axios';
 import { Card } from '../components/Card/Card';
 
 
-export const Menu = () => {
+export const Menu = ({api}) => {
 
 
   const [product, setProduct] = useState([0]);
@@ -17,7 +17,7 @@ export const Menu = () => {
   }, []);
 
   const getProduct = () => {
-    axios.get('populer_items/')
+    axios.get(api+'populer_items')
       .then((response) => {
         setProduct(response.data);
       })

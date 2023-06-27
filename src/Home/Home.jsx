@@ -8,7 +8,7 @@ import { Menu } from '../menu/menu';
 import { Header } from '../Header/Header';
 import { useLocation } from 'react-router-dom';
 
-export const Home = () => {
+export const Home = ({api}) => {
     const location =useLocation()
     console.log(location);
     
@@ -19,7 +19,7 @@ export const Home = () => {
             <img className='homeimg' src={homeimg} />
             <CUP />
             <About />
-            <Menu />
+            <Menu api={api} />
             <Footer />
 
 
