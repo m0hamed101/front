@@ -1,0 +1,52 @@
+* {
+    text-decoration: none;
+}
+
+.header {
+    position: absolute;
+}
+
+.shoppage {
+    background-color: #EDE0D4;
+}
+
+
+.item-icon {
+    display: flex;
+}
+
+.shop-contener {
+    padding-top: 10%;
+    background-color: #EDE0D4;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.7fr 4fr;
+}
+
+.cards_contaner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 13px;
+}
+
+.cat {
+    margin: auto;
+    width: 40%;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+
+@media only screen and (max-width:900px) {
+
+    .cat {
+        display: block;
+    }
+}
+
+.catlink {
+    margin: 15px;
+    font-size: 30px;
+}

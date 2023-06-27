@@ -1,0 +1,51 @@
+.menu {
+    background-color: #EDE0D4;
+    padding: 50px;
+}
+
+.card-title {
+    text-align: right;
+}
+
+.menuitems {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.menuhead {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px;
+}
+
+
+
+
+@media only screen and (max-width: 900px) {
+
+    .menuitems {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menuhead {
+        text-align: center;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .menuitems {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .menuhead {
+        display: block;
+    }
+
+    .card-part {
+        flex-basis: 100%;
+    }
+}

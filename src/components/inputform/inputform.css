@@ -1,0 +1,8 @@
+.forminput input {
+    padding: 0px 15px;
+}
+
+.forminput {
+    display: flex;
+    justify-content: center;
+}
