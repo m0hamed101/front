@@ -17,7 +17,7 @@ export const Menu = () => {
   }, []);
 
   const getProduct = () => {
-    axios.get('http://localhost:5000/populer_items/')
+    axios.get('populer_items/')
       .then((response) => {
         setProduct(response.data);
       })

@@ -20,7 +20,7 @@ export const Item = () => {
     }, []);
 
     const getitem = () => {
-        axios.get('http://localhost:5000' + id)
+        axios.get('' + id)
             .then((response) => {
                 setitem(response.data);
             })

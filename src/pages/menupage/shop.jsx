@@ -14,9 +14,9 @@ export const Shop = () => {
     getProduct();
   }, []);
 
-  
+
   const getProduct = () => {
-    axios.get('http://localhost:5000/')
+    axios.get('')
       .then((response) => {
         setProduct(response.data);
       })
@@ -39,7 +39,7 @@ export const Shop = () => {
           <Card key={item.id} item={item} />
         ))}
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

@@ -7,17 +7,16 @@ import { Contact } from './pages/contact/contact';
 
 
 
-
 function App() {
   return (
     <div className="App">
 
       <BrowserRouter>
         <Routes>
-        <Route exact path='/' element={<Home />} />
+          <Route exact path='/' element={<Home />} />
           <Route path='/shop' element={<Shop />} />
-          <Route path='/contact' element={<Contact/>} />
-          <Route path='/:id' element={<Item/>} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/:id' element={<Item />} />
 
         </Routes>
       </BrowserRouter>
