@@ -7,7 +7,7 @@ import './item.css'
 import axios from 'axios';
 
 
-export const Item = () => {
+export const Item = ({api}) => {
     const location = useLocation()
     const id = location.pathname
     // console.log(id);
@@ -20,7 +20,7 @@ export const Item = () => {
     }, []);
 
     const getitem = () => {
-        axios.get('' + id)
+        axios.get(api + id)
             .then((response) => {
                 setitem(response.data);
             })

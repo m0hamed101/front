@@ -17,7 +17,7 @@ function App() {
           <Route exact path='/' element={<Home api={api}/>} />
           <Route path='/shop' element={<Shop api={api} />} />
           <Route path='/contact' element={<Contact />} />
-          <Route path='/:id' element={<Item />} />
+          <Route path='/:id' element={<Item api={api} />} />
 
         </Routes>
       </BrowserRouter>
