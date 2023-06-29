@@ -16,7 +16,7 @@ export const Headerpo = () => {
 
                 <ul className={`navbar-links ${isMenuOpen ? 'active' : ''}`}>
                     <li>
-                        <Link to={`../home`}>Home</Link>
+                        <Link to={`../`}>Home</Link>
                     </li>
                     <li>
                         <Link to={`../shop`}>Shop</Link>
