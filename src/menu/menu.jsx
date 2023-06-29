@@ -17,7 +17,7 @@ export const Menu = ({api}) => {
   }, []);
 
   const getProduct = () => {
-    axios.get(api+'populer_items')
+    axios.get(api+'/populer_items')
       .then((response) => {
         setProduct(response.data);
       })

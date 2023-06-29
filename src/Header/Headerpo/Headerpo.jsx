@@ -16,14 +16,14 @@ export const Headerpo = () => {
 
                 <ul className={`navbar-links ${isMenuOpen ? 'active' : ''}`}>
                     <li>
-                        <Link to={`../`}>Home</Link>
+                        <Link to={`../home`}>Home</Link>
                     </li>
                     <li>
                         <Link to={`../shop`}>Shop</Link>
                     </li>
 
                     <li>
-                        <Link to={`../`}>contact</Link>
+                        <Link to={`../contact`}>contact</Link>
                     </li>
                 </ul>
                 <div className="navbar-toggle" onClick={toggleMenu}>

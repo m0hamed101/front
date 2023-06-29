@@ -16,7 +16,7 @@ export const Header = () => {
 
                 <ul className={`navbar-links ${isMenuOpen ? 'active' : ''}`}>
                 <li>
-                <Link to={`/`}>Home</Link>
+                <Link to={`/home`}>Home</Link>
             </li>
                     <li>
                         <Link to={`/shop`}>Shop</Link>

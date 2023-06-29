@@ -10,7 +10,7 @@ import axios from 'axios';
 export const Item = ({api}) => {
     const location = useLocation()
     const id = location.pathname
-    // console.log(id);
+    console.log('id is ',id);
 
 
     const [item, setitem] = useState([0]);
@@ -20,7 +20,7 @@ export const Item = ({api}) => {
     }, []);
 
     const getitem = () => {
-        axios.get(api + id)
+        axios.get('https://drinks-shop-a23d.onrender.com/products' + id)
             .then((response) => {
                 setitem(response.data);
             })

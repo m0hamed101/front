@@ -4,20 +4,22 @@ import { createBrowserRouter, RouterProvider, BrowserRouter, Routes, Route, Navi
 import { Shop } from './pages/menupage/shop';
 import { Item } from './pages/itempage/item';
 import { Contact } from './pages/contact/contact';
+import { LoginForm } from './pages/Login/LoginForm';
 
 
 
 function App() {
-  const api = "https://drinks-shop-a23d.onrender.com/"
+  const api = "https://drinks-shop-a23d.onrender.com"
   return (
     <div className="App">
 
       <BrowserRouter>
         <Routes>
-          <Route exact path='/' element={<Home api={api}/>} />
+          <Route exact path='/' element={<LoginForm />} />
+          <Route exact path='/home' element={<Home api={api} />} />
           <Route path='/shop' element={<Shop api={api} />} />
           <Route path='/contact' element={<Contact />} />
-          <Route path='/:id' element={<Item api={api} />} />
+          <Route path='/:id' element={<Item />} />
 
         </Routes>
       </BrowserRouter>

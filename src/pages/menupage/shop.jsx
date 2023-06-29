@@ -19,7 +19,7 @@ export const Shop = ({api}) => {
 
 
   const getProduct = () => {
-    axios.get(api)
+    axios.get(api+'/products')
       .then((response) => {
         setProduct(response.data);
       })
