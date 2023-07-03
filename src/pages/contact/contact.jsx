@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
-import { Headerpo } from '../../Header/Headerpo/Headerpo'
-import { Footer } from '../../footer/Footer'
+import { Header } from '../../components/Header/Header'
+import { Footer } from '../../components/footer/Footer'
 import './Contact.css'
 import { Inputform } from '../../components/inputform/Inputform'
 export const Contact = () => {
@@ -10,8 +10,8 @@ export const Contact = () => {
         console.log(nameraf);
     }
     return (
-        <div className='formcontaner'>
-            <Headerpo />
+        <div className='formconect'>
+            <Header />
             <div className="contactHeader">Contact Us</div>
             <form onSubmit={handlesubmit}>
                 <Inputform placeholder="Name" refe={nameraf} />

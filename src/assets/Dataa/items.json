@@ -1,45 +1,95 @@
-{    
-    "items":[
-        {
-            "id": 1,
-            "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
-            "price": 109.95,
-            "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
-            "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
-        },
-        {
-            "id": 2,
-            "title": "Mens Casual Premium Slim Fit T-Shirts ",
-            "price": 22.3,
-            "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
-            "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
-        },
-        {
-            "id": 3,
-            "title": "Mens Cotton Jacket",
-            "price": 55.99,
-            "description": "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.",
-            "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg"
-        },
-        {
-            "id": 4,
-            "title": "Mens Casual Slim Fit",
-            "price": 15.99,
-            "description": "The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.",
-            "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg"
-        },
-        {
-            "id": 5,
-            "title": "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
-            "price": 695,
-            "description": "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
-            "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg"
-        },
-        {
-            "id": 6,
-            "title": "Solid Gold Petite Micropave ",
-            "price": 168,
-            "description": "Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.",
-            "image": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg"
-        }
-    ]}
+[{
+  "_id": {
+    "$oid": "6497152500b8d6aed9f8c453"
+  },
+  "title": "Espresso",
+  "image": "https://i.pinimg.com/564x/de/31/eb/de31eb24723baa97e85c3d72b535826d.jpg",
+  "description": "A concentrated coffee beverage brewed by forcing a small amount of nearly boiling water under pressure through finely ground coffee beans.",
+  "id": "1",
+  "price": {
+    "small": "2.99",
+    "mid": "3.99",
+    "larg": "4.99"
+  }
+},{
+  "_id": {
+    "$oid": "6497152500b8d6aed9f8c454"
+  },
+  "title": "Cappuccino",
+  "price": {
+    "small": "2.99",
+    "mid": "3.99",
+    "larg": "4.99"
+  },
+  "image": "https://i.pinimg.com/564x/2a/53/41/2a5341978c92019cc7c81a3defab7565.jpg",
+  "description": "An espresso-based coffee drink that originated in Italy. It is composed of double espresso and steamed milk, topped with a layer of foamed milk.",
+  "id": "2"
+},{
+  "_id": {
+    "$oid": "6497152500b8d6aed9f8c455"
+  },
+  "title": "Latte",
+  "price": {
+    "small": "2.99",
+    "mid": "3.99",
+    "larg": "4.99"
+  },
+  "image": "https://i.pinimg.com/564x/67/cd/c1/67cdc1683f91f9916de003ca3c94ef57.jpg",
+  "description": "A coffee drink made with espresso and steamed milk, often topped with a small amount of foamed milk. It can be flavored with syrups like vanilla or caramel.",
+  "id": "3"
+},{
+  "_id": {
+    "$oid": "6497152500b8d6aed9f8c456"
+  },
+  "title": "Mocha",
+  "price": {
+    "small": "2.99",
+    "mid": "3.99",
+    "larg": "4.99"
+  },
+  "image": "https://i.pinimg.com/564x/24/58/ef/2458eff64455bf2c622fb5aa79a58d9b.jpg",
+  "description": "A coffee drink that combines espresso, chocolate, and steamed milk. It is often topped with whipped cream and chocolate drizzle.",
+  "id": "4"
+},{
+  "_id": {
+    "$oid": "6497152500b8d6aed9f8c457"
+  },
+  "title": "Americano",
+  "price": {
+    "small": "2.99",
+    "mid": "3.99",
+    "larg": "4.99"
+  },
+  "image": "https://i.pinimg.com/564x/bc/0c/ff/bc0cffc8b21c24b4b571e98b9ab5da12.jpg",
+  "description": "A coffee drink made by diluting an espresso shot with hot water. It has a similar strength to drip coffee but a different flavor profile.",
+  "id": "5"
+},{
+  "_id": {
+    "$oid": "6497152500b8d6aed9f8c458"
+  },
+  "title": "Macchiato",
+  "price": {
+    "small": "2.99",
+    "mid": "3.99",
+    "larg": "4.99"
+  },
+  "image": "https://i.pinimg.com/564x/08/33/d0/0833d0e9a0a985beb60de29d8c38106c.jpg",
+  "description": "An espresso-based coffee drink with a small amount of milk. It can be either an espresso macchiato (espresso with a dollop of milk) or a latte macchiato (milk with a splash of espresso).",
+  "id": "6"
+},{
+  "_id": {
+    "$oid": "6497152500b8d6aed9f8c459"
+  },
+  "title": "Flat White",
+  "price": {
+    "small": "2.99",
+    "mid": "3.99",
+    "larg": "4.99"
+  },
+  "image": "https://i.pinimg.com/564x/69/27/8d/69278df692b908574ad168c1f0410ab2.jpg",
+  "description": "A coffee drink consisting of espresso and microfoam (velvety textured milk). It originated in Australia and New Zealand and has become popular worldwide.",
+  "id": "7",
+  "larg": "4.99",
+  "mid": "3.99",
+  "small": "2.99"
+}]

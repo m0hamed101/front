@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import '../menupage/shop.css';
 import ChevronRightOutlinedIcon from '@mui/icons-material/ChevronRightOutlined';
-import { Footer } from '../../footer/Footer';
-import { Headerpo } from '../../Header/Headerpo/Headerpo';
+import { Footer } from '../../components/footer/Footer';
+import { Header } from '../../components/Header/Header';
 import { Card } from '../../components/Card/Card';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import '../shop_page/shop_page.css'
 
-export const Shop = ({api}) => {
+export const Shop = ({ api }) => {
 
 
 
@@ -19,9 +19,9 @@ export const Shop = ({api}) => {
 
 
   const getProduct = () => {
-    axios.get(api+'/products')
+    axios.get(api + '/products')
       .then((response) => {
-        setProduct(response.data);
+        setProduct(response.data); 
       })
       .catch((error) => {
         console.error(error);
@@ -30,7 +30,7 @@ export const Shop = ({api}) => {
 
   return (
     <div className='shoppage'>
-      <Headerpo />
+      <Header/>
       <div className="cat">
         <div className='catlink'><Link to={'/'}> All </Link></div>
         <div className='catlink'><Link to={'/'}> Coffee </Link></div>

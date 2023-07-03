@@ -1,16 +1,16 @@
 
-import '../menu/menu.css'
 import KeyboardTabTwoToneIcon from '@mui/icons-material/KeyboardTabTwoTone';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import { Card } from '../components/Card/Card';
+import { Card } from '../../components/Card/Card';
+import './populer_item.css'
 
 
 export const Menu = ({api}) => {
 
 
-  const [product, setProduct] = useState([0]);
+  const [product, setProduct] = useState([]);
 
   useEffect(() => {
     getProduct();

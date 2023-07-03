@@ -1,17 +1,24 @@
-
-.navbar_postion{
+.navbar {
+    width: 100%;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #EDE0D4;
     color: black;
-    padding: 10px;
 }
 
 .navbar-toggle {
     cursor: pointer;
     font-size: 20px;
     visibility: hidden
+}
+
+#btnlogout {
+    width: 100px;
+    border-radius: 25px;
+    background-color: #EDE0D4;
+    margin-left: 20px;
 }
 
 .navbar-links {
@@ -31,9 +38,6 @@
     align-items: flex-start;
 }
 
-.navbar-links li {
-    margin-bottom: 10px;
-}
 
 .navbar-links li a {
     font-size: 25px;
@@ -53,5 +57,14 @@
         list-style-type: none;
         justify-content: space-between;
     }
- 
+
+}
+
+
+#btnheader {
+    background-color: rgb(61, 41, 41);
+    color: rgb(255, 255, 255);
+    list-style: none;
+    padding: 8px;
+    border-radius: 15px;
 }

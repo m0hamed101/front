@@ -1,6 +1,6 @@
 import React from 'react';
 import '../CUP/CUP.css';
-import cupimg from '../assets/cup.jpg';
+import cupimg from '../../assets/cup.jpg';
 
 export const CUP = () => {
     return (

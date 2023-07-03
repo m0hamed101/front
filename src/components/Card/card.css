@@ -5,8 +5,7 @@
     border-radius: 30px;
     min-height: 300px;
     min-width: 300px;
-    
-
+    text-decoration: none;
 }
 
 .imgcrd {
@@ -19,13 +18,16 @@
 .imgcrd img {
     border-radius: 40px;
     padding: 15px;
-    width: 30%;
+    width: 40%;
 }
 
-.price {
+.price {}
+
+.orders {
+    padding: 20px;
     text-align: right;
-    padding: 15px;
 }
+
 
 .cardtitle {
     padding: 15px;
@@ -33,12 +35,20 @@
 }
 
 .carddes {
-    padding: 15px;
-    width: 85%;
-}.cardtitle{
+    max-height: 100px;
+    overflow: hidden;
+        padding: 15px;
+
+
+}
+
+.cardtitle {
     text-align: center;
 }
-.price ,.cardtitle ,.carddes{
+
+.price,
+.cardtitle,
+.carddes {
     color: rgb(0, 0, 0);
     font-size: 25px;
 }
