@@ -20,7 +20,7 @@ export const Item = ({ api }) => {
 
   const getItem = () => {
     axios
-      .get(`${api}/products `+ id)
+      .get(`${api}/products`+ id)
       .then((response) => {
         setItem(response.data);
       })
