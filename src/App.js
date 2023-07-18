@@ -23,6 +23,7 @@ import { Cart } from './pages/cart/cart';
 function App() {
   const { user } = useAuthContext()
   const api = "https://drinks-shop-a23d.onrender.com"
+  // const api = "http://localhost:4000"
   return (
     <div className="App">
 
@@ -31,8 +32,8 @@ function App() {
           <Route exact path='/' element={<Home api={api} />} />
           <Route path='/shop' element={<Shop api={api} />} />
           <Route path='/contact' element={<Contact />} />
-          <Route path='/:id' element={<Item />} />
-          <Route path='/cart' element={<Cart />} />
+          <Route path='/:id' element={<Item api={api} />} />
+          <Route path='/cart' element={<Cart api={api} />} />
 
           <Route path="/login" element={!user ? <Login /> : <Home api={api} />} />
           <Route path="/signup" element={!user ? <Signup /> : <Home api={api} />} />

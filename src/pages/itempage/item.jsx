@@ -6,13 +6,14 @@ import './item.css';
 import axios from 'axios';
 import Swal from 'sweetalert2';
 
+
 export const Item = ({ api }) => {
   const [item, setItem] = useState([0]);
   const location = useLocation();
   const id = location.pathname;
-
   const [selectedOption, setSelectedOption] = useState('');
   const [price, setPrice] = useState(0);
+
 
   useEffect(() => {
     getItem();
@@ -20,7 +21,7 @@ export const Item = ({ api }) => {
 
   const getItem = () => {
     axios
-      .get(api + id)
+      .get(`${api}/products` + id)
       .then((response) => {
         setItem(response.data);
       })
@@ -29,9 +30,24 @@ export const Item = ({ api }) => {
       });
   };
 
+
+  const postItem = () => {
+    axios.post(`${api}/cart`, item[0])
+      .then(response => {
+        console.log(response.data);
+      })
+      .catch(error => {
+        console.error(error);
+      });
+
+
+  }
+
+
+
+
   const handleOptionChange = (event) => {
     setSelectedOption(event.target.value);
-
     if (event.target.value === 'Small') {
       setPrice(item[0].price[0].small);
     } else if (event.target.value === 'middam') {
@@ -74,10 +90,10 @@ export const Item = ({ api }) => {
               <option value="larg">larg</option>
             </select>
           </div>
-          <button onClick={showAlert} className="item_btn">
-            BUY
-          </button>
-          <Link to={'../cart'} className="item_btn">ADD TO CART</Link>
+          <div>
+            <button onClick={showAlert} className="item_btn"> BUY</button>
+          </div>
+          <Link onClick={postItem} to={'../cart'} className="item_btn" >ADD TO CART</Link>
         </div>
       </div>
       <div className="footer">
