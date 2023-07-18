@@ -21,7 +21,7 @@ export const Item = ({ api }) => {
 
   const getItem = () => {
     axios
-      .get(`${api}/products` + id)
+      .get(api + id)
       .then((response) => {
         setItem(response.data);
       })

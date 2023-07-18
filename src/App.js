@@ -33,7 +33,7 @@ function App() {
           <Route path='/shop' element={<Shop api={api} />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/:id' element={<Item api={api} />} />
-          <Route path='/cart' element={<Cart api={api} />} />
+          <Route path='/cart' element={<Cart />} />
 
           <Route path="/login" element={!user ? <Login /> : <Home api={api} />} />
           <Route path="/signup" element={!user ? <Signup /> : <Home api={api} />} />
